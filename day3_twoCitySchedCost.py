@@ -19,9 +19,9 @@
 
 
 def twoCitySchedCost(costs):
-    firstCity = [i for i,j in costs]
-    diff = [j - i for i,j in costs]
-    return sum(firstCity) + sum(sorted(diff)[:len(costs)//2])
+    cityAList = [A for A,B in costs]
+    diff = [B - A for A,B in costs]
+    return sum(cityAList) + sum(sorted(diff)[:len(costs)//2])
 
 
 print(twoCitySchedCost([[259,770],[448,54],[926,667],[184,139],[840,118],[577,469]]))
