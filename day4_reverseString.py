@@ -16,6 +16,6 @@ def reverseString(s):
         s[p1], s[p2] = s[p2], s[p1]
         p1 += 1
         p2 -= 1
-    return s
+    #return s
 
 print(reverseString(["h","e","l","l","o"]))
